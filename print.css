@@ -1,0 +1,42 @@
+
+.grid-item1{
+display: none;
+}
+
+.maps-container{
+    display: none;
+}
+
+.googlebox{
+    display:none;
+}
+
+.titlebox1{
+    grid-row:1/2;
+    color: black;
+}
+
+.titlebox2{
+    grid-row:1/2;
+    color: black;
+}
+.opentimes-container{
+    grid-column: 8/11;
+    grid-row:2/8;
+}
+
+.vertical-line{
+    display: none;
+}
+
+.contactform-container{
+    grid-row:3/8;
+}
+
+.undertitlebox{
+    grid-row:2/3;
+}
+
+.footer2{
+    display: none;
+}
