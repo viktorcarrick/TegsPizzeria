@@ -238,21 +238,31 @@ nav a:hover {
     font-size: 24px;
 }
 
+/*---text styling---*/
 .woltlogo{
-    max-width: 6%;
-    align-self: flex-end;
-    margin-bottom: 1em;
-    
+    grid-column: 4/6;
+    grid-row:5/7;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.foodoralogo{
-    max-width: 6%;
-    align-self: flex-end;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    border-radius: 17px;
+.woltlogo img{
+    width:50%;
 }
-/*---text styling---*/
+.foodoralogo{
+    grid-column: 8/10;
+    grid-row: 5/7;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodoralogo img{
+    width: 50%;
+    border-radius: 30px;
+}
 .menubutton{
     background-color: rgba(255, 255, 0, 0);
     grid-column: 6/8;
@@ -373,6 +383,20 @@ nav a:hover {
         display: none;
     }
 
+    .woltlogo{
+        grid-row: 6/7;
+        grid-column: 1/2;
+        width:15%;
+        margin-left: 10%;
+    }
+
+    .foodoralogo {
+        grid-row: 6/7;
+        grid-column: 1/2;
+        width:20%;
+        border-radius: none;
+        margin-left: 65%;
+    }
 
     .menubutton{
         grid-column: 1/2;
