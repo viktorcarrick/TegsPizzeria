@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <title>Tegs Pizzeria & Grill</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" type="text/javascript"></script>
   </head>
   <body style="margin: 0">
     <div class="grid-item1">
@@ -40,7 +41,7 @@
     <div class="team-gridcontainer">
       <div class="person1-grid-item">
         <div class="profilepic-container">
-          <img src="bilder/profile.png" alt="profilbild" />
+          <img src="bilder/profile.png" alt="profilbild" id="profilepic1"/>
         </div>
         <div class="profileinfo-container">
           <h1 class="profile-name">Hasse "Wellpapp" Hansson</h1>
@@ -50,26 +51,45 @@
           </p>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+            $('.profile-bio').hide();
+            $('.profilepic-container').hide();
+            $('.profile-name').hide();
+            $('.profile-bio').fadeIn({queue:false, duration: 2000});
+            $('.profilepic-container').fadeIn({queue:false, duration: 2000});
+            $('.profile-name').fadeIn({queue:false, duration: 2000});
+
+            $('.profile-name').animate({
+              borderBottomWidth: "2px",
+              letterSpacing: "+=1px"
+            },2000);
+
+            $('.profile-bio').animate({
+              letterSpacing: "+=0.5px"
+            },2000);
+        });
+      </script>
       <div class="person2-grid-item">
         <div class="profilepic-container">
-          <img src="bilder/profile.png" alt="profilbild" />
+          <img src="bilder/profile.png" alt="profilbild" id="profilepic1" />
         </div>
         <div class="profileinfo-container">
           <h1 class="profile-name">Douglas "Degen" Didriksson</h1>
           <p class="profile-bio">
-            Medgrundrare av Tegs Pizzeria & Grill och upphovsmannen till vår
+            Medgrundare av Tegs Pizzeria & Grill och upphovsmannen till vår
             världsberömda pizzadeg.
           </p>
         </div>
       </div>
       <div class="person3-grid-item">
         <div class="profilepic-container">
-          <img src="bilder/profile.png" alt="profilbild" />
+          <img src="bilder/profile.png" alt="profilbild" id="profilepic1"  />
         </div>
         <div class="profileinfo-container">
           <h1 class="profile-name">Sven "Såsen" Svensson</h1>
           <p class="profile-bio">
-            Medgrundrare av Tegs Pizzeria & Grill och upphovsmannen till vår
+            Medgrundare av Tegs Pizzeria & Grill och upphovsmannen till vår
             världsberömda kebabsås.
           </p>
         </div>
